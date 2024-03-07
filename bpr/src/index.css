@@ -131,3 +131,22 @@ img {
 .btn.sm:hover {
   background: hsl(var(--foreground));
 }
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: white;
+  transition: var(--transition);
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}

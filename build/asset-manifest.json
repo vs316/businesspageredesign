@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0da96bf5.css",
+    "main.js": "/static/js/main.344226d3.js",
+    "static/media/pexels-fwstudio-129731.jpg": "/static/media/pexels-fwstudio-129731.923cf8250479415577d1.jpg",
+    "static/media/slide1.jpg": "/static/media/slide1.1f555e0077e159daaa25.jpg",
+    "static/media/slide2.jpg": "/static/media/slide2.b224aaf2a43107e71ad0.jpg",
+    "index.html": "/index.html",
+    "main.0da96bf5.css.map": "/static/css/main.0da96bf5.css.map",
+    "main.344226d3.js.map": "/static/js/main.344226d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0da96bf5.css",
+    "static/js/main.344226d3.js"
+  ]
+}

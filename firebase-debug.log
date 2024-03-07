@@ -1,0 +1,32 @@
+[debug] [2024-03-07T04:25:58.487Z] ----------------------------------------------------------------------
+[debug] [2024-03-07T04:25:58.490Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --project srivasaga
+[debug] [2024-03-07T04:25:58.491Z] CLI Version:   13.4.0
+[debug] [2024-03-07T04:25:58.491Z] Platform:      win32
+[debug] [2024-03-07T04:25:58.491Z] Node Version:  v21.6.2
+[debug] [2024-03-07T04:25:58.491Z] Time:          Thu Mar 07 2024 09:55:58 GMT+0530 (India Standard Time)
+[debug] [2024-03-07T04:25:58.491Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-07T04:25:58.575Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-07T04:25:58.576Z] > authorizing via signed-in user (vachan316@gmail.com)
+[debug] [2024-03-07T04:25:58.576Z] [iam] checking project srivasaga for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-07T04:25:58.586Z] > refreshing access token with scopes: []
+[debug] [2024-03-07T04:25:58.594Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-07T04:25:58.594Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-07T04:25:58.841Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-03-07T04:25:58.841Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-07T04:25:58.869Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/srivasaga:testIamPermissions [none]
+[debug] [2024-03-07T04:25:58.870Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/srivasaga:testIamPermissions x-goog-quota-user=projects/srivasaga
+[debug] [2024-03-07T04:25:58.870Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/srivasaga:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-07T04:26:00.322Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/srivasaga:testIamPermissions 200
+[debug] [2024-03-07T04:26:00.323Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/srivasaga:testIamPermissions {}
+[debug] [2024-03-07T04:26:00.323Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project srivasaga:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-03-07T04:26:00.324Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/srivasaga [none]
+[debug] [2024-03-07T04:26:01.533Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/srivasaga 403
+[debug] [2024-03-07T04:26:01.533Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/srivasaga {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-03-07T04:26:01.535Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-03-07T04:26:01.537Z] Specified "public" directory "build" does not exist; Deploy to Hosting site "" may fail or be empty.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
