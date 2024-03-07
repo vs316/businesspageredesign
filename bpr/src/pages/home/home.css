@@ -313,6 +313,60 @@
 
   .ptb {
     margin-top: 22.5rem;
+    align-items: center;
+    font-size: x-small;
+  }
+  .main-row {
+    flex-direction: column;
+    align-items: center;
+    font-size: x-small;
+  }
+
+  .main__footer {
+    position: relative;
+  }
+  .main__footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 300px) {
+  a.btn.lg {
+    font-size: 0.7rem;
+    padding: auto;
+  }
+  .nav__container img {
+    width: 8rem;
+  }
+  .nav__toggle-btn svg {
+    font-size: 1.5rem;
+  }
+  .main__header-container {
+    margin-top: 1rem;
+  }
+  .main__header-image img {
+    margin-top: 7rem;
+    width: 100%;
+  }
+  .main__header-left h4 {
+    font-size: 1.2rem;
+  }
+  .main__header-left h1 {
+    font-size: 2rem;
+  }
+  .main__header-left p {
+    font-size: 0.9rem;
+  }
+
+  .main__header-circle {
+    display: none;
+  }
+
+  .ptb {
+    margin-top: 32rem;
+    align-items: center;
+    font-size: x-small;
   }
   .main-row {
     flex-direction: column;
